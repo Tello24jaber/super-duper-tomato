@@ -1,12 +1,18 @@
 ---
-import nav from '../components/nav.astro';
+import Footer from '../components/footer.astro';
+import Para from '../components/para.astro';
+import Nav from '../components/nav.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout> 
-	<nav/>
+<Layout>
+  <Nav />
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHBnOTRjdHF0bDRhcG9lamJ4eXN3MHE4emJzbzVidjkybnExdDgyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WSxVrga7NqKlkmC13M/giphy.gif" 
+       alt="Tomato GIF"
+       class="fixed right-4 top-1/2 transform -translate-y-40 w-56 h-auto mix-blend-multiply pointer-events-none" />
+
+  <Para />
+  <Footer />
 </Layout>

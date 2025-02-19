@@ -1,0 +1,22 @@
+---
+  // Import the GitHub and LinkedIn icons from your assets folder
+  import { Image } from 'astro:assets';
+  import GitHubIcon from '../assets/github.svg';  // Adjust the path to your GitHub icon
+  import LinkedInIcon from '../assets/linkedin.svg';  // Adjust the path to your LinkedIn icon
+---
+
+<footer class=" text-amber-800 py-8 mt-12">
+  <div class="container mx-auto flex justify-between items-center">
+    <p class="text-lg">© 2025 die Tomate🍅. All Rights Reserved.</p>
+    <div class="flex space-x-6">
+      
+      <a href="https://github.com/tello24jaber" target="_blank" class="hover:opacity-75">
+        <Image src={GitHubIcon} alt="GitHub" class="w-8 h-8" />
+      </a>
+     
+      <a href="https://www.linkedin.com/in/talal-jaber-02132b2b9/?fbclid=IwY2xjawIi0B5leHRuA2FlbQIxMAABHVqHX7500195snEP2FPIChnb1xyB-74ZSXB8EaHNfGEvtZtmwQXvsgLGqg_aem_I2xbJHI2hAISQJlsm-N32Q" target="_blank" class="hover:opacity-75">
+        <Image src={LinkedInIcon} alt="LinkedIn" class="w-8 h-8" />
+      </a>
+    </div>
+  </div>
+</footer>
